@@ -47,7 +47,7 @@ public class Jugador_bola : MonoBehaviour
             Valz += 6.0f;
         }
         Instantiate(suelo, new Vector3(Valx, 0, Valz), Quaternion.identity);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         suelo.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         suelo.gameObject.GetComponent<Rigidbody>().useGravity = true;
         yield return new WaitForSeconds(2);
