@@ -70,4 +70,10 @@ public class Jugador_bola : MonoBehaviour
             Instantiate(suelo, new Vector3(Valx, 0, Valz), Quaternion.identity);
         }
     }
+
+    void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("Premio")){
+            Destroy(other.gameObject);
+        }
+    }
 }

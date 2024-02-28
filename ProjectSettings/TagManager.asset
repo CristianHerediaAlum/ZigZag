@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BotonSalir
   - Suelo
+  - Premio
   layers:
   - Default
   - TransparentFX
