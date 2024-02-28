@@ -33,7 +33,7 @@ public class Cuenta_atras : MonoBehaviour
             imagen.sprite = numeros[i];
             yield return new WaitForSeconds(1);
         }
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("1");
     }
 
     // Update is called once per frame
