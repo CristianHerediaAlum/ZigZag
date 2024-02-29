@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -588,9 +588,9 @@ MonoBehaviour:
   suelo: {fileID: 1661745318}
   velocidad: 7.5
   particleSystem: {fileID: 1481356526}
-  CorazonImage1: {fileID: 0}
-  CorazonImage2: {fileID: 0}
-  CorazonImage3: {fileID: 0}
+  CorazonImage1: {fileID: 1220088565}
+  CorazonImage2: {fileID: 1391007998}
+  CorazonImage3: {fileID: 872698157}
   contador: {fileID: 1310375632}
 --- !u!1 &860554450
 GameObject:
@@ -787,6 +787,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 950cc370ff5171744b537a741359ce49, type: 3}
+--- !u!114 &872698157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1643813200101661794, guid: 950cc370ff5171744b537a741359ce49, type: 3}
+  m_PrefabInstance: {fileID: 872698156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &939502532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -957,6 +968,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 950cc370ff5171744b537a741359ce49, type: 3}
+--- !u!114 &1220088565 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1643813200101661794, guid: 950cc370ff5171744b537a741359ce49, type: 3}
+  m_PrefabInstance: {fileID: 1220088564}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1310375630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,6 +1155,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 950cc370ff5171744b537a741359ce49, type: 3}
+--- !u!114 &1391007998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1643813200101661794, guid: 950cc370ff5171744b537a741359ce49, type: 3}
+  m_PrefabInstance: {fileID: 1391007997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &1481356526 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5269657883606410419, guid: 814928453fa687b43ad60f862c93fc07, type: 3}

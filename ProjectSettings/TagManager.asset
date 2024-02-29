@@ -8,6 +8,7 @@ TagManager:
   - Suelo
   - Premio
   - Acabar
+  - Enemigo
   layers:
   - Default
   - TransparentFX

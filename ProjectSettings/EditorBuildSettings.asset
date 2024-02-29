@@ -13,8 +13,14 @@ EditorBuildSettings:
     guid: 10187525e784c7f4e8e2e440e8d18352
   - enabled: 1
     path: Assets/Scenes/2.unity
-    guid: 1531f417205d7b14db71cb9899d6c23e
+    guid: 901af98dec604014a9028d42c45912d0
+  - enabled: 1
+    path: Assets/Scenes/3.unity
+    guid: 180b6294bbec330488158c132838bedd
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 4e409cdee4e9b954fb443c0a12d3f852
+  - enabled: 1
+    path: Assets/Scenes/Ganar.unity
+    guid: 80cb25f00009d984b9bbe240afe8cdd2
   m_configObjects: {}

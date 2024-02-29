@@ -43,11 +43,11 @@ public class Jugador_bola : MonoBehaviour
             CambiarDireccion();
         }
         if(Input.GetKeyUp(KeyCode.Space)) {
-            rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            if(rb.position.y < 1.0f)
+                rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
         }
-        if (transform.position.y < -10 || totalCorazones == 0)
+        if (transform.position.y < -10)
         {
-            // Recarga la escena actual
             SceneManager.LoadScene("GameOver");
         }
     }
@@ -120,20 +120,36 @@ public class Jugador_bola : MonoBehaviour
             {
                 particleSystem.Play(); // Inicia la reproducción del sistema de partículas al tocar el cubo
             }
-            // heartImage.color = new Color(0.5f, 0.5f, 0.5f); // Cambia el color del corazón cuando se golpea
-            // totalCorazones--;
             FindObjectOfType<AudioManager>().PlaySound("CogerMoneda");
             totalEstrellas++;
 			contador.text = "Contador = " + totalEstrellas;
             Destroy(other.gameObject);
-            if(totalEstrellas == 10) {
+            if(totalEstrellas >= 10) {
 
                 escena = SceneManager.GetActiveScene().name;
                 int escenaActual = int.Parse(escena);
+                if(escenaActual == 3) {
+                    SceneManager.LoadScene("Ganar");
+                }
                 escenaActual++;
                 escena = (escenaActual).ToString();
                 SceneManager.LoadScene(escena);
             }
+        }
+        if(other.gameObject.CompareTag("Enemigo")) {
+            // FindObjectOfType<AudioManager>().PlaySound("Golpe"); // Hay que meter sonido
+            totalCorazones--;
+            if(totalCorazones == 2) {
+                CorazonImage3.enabled = false;
+            }
+            else if(totalCorazones == 1) {
+                CorazonImage2.enabled = false;
+            }
+            else if(totalCorazones == 0) {
+                CorazonImage1.enabled = false;
+                SceneManager.LoadScene("GameOver");
+            }
+            Destroy(other.gameObject);
         }
     }
 }
