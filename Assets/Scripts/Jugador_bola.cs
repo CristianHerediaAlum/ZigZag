@@ -10,7 +10,7 @@ public class Jugador_bola : MonoBehaviour
     public Camera camara;
     public GameObject suelo;
     public float velocidad = 5.0f;
-	public ParticleSystem particleSystem;
+    public ParticleSystem particleSystem;
     public Image CorazonImage1;
     public Image CorazonImage2;
     public Image CorazonImage3;
@@ -45,7 +45,7 @@ public class Jugador_bola : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Space)) {
             rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
         }
-        if (transform.position.y < -10 or totalCorazones == 0)
+        if (transform.position.y < -10 || totalCorazones == 0)
         {
             // Recarga la escena actual
             SceneManager.LoadScene("GameOver");
@@ -122,6 +122,7 @@ public class Jugador_bola : MonoBehaviour
             }
             // heartImage.color = new Color(0.5f, 0.5f, 0.5f); // Cambia el color del corazón cuando se golpea
             // totalCorazones--;
+            FindObjectOfType<AudioManager>().PlaySound("CogerMoneda");
             totalEstrellas++;
 			contador.text = "Contador = " + totalEstrellas;
             Destroy(other.gameObject);
