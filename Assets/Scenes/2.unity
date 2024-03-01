@@ -510,7 +510,7 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 7498354511860834488, guid: 3f25c3a6498a14e499dc5dbd2d838756, type: 3}
   ground: {fileID: 1661745323}
   spawnHeight: 0.5
-  numberOfPrefabsToSpawn: 1
+  numberOfPrefabsToSpawn: 2
 --- !u!1 &809957357
 GameObject:
   m_ObjectHideFlags: 0
