@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class spawnPrefab1 : MonoBehaviour
+public class SpawnPrefab : MonoBehaviour
 {
     public GameObject prefabToSpawn;
     public Transform ground;

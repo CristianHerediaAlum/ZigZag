@@ -137,7 +137,7 @@ public class Jugador_bola : MonoBehaviour
             }
         }
         if(other.gameObject.CompareTag("Enemigo")) {
-            // FindObjectOfType<AudioManager>().PlaySound("Golpe"); // Hay que meter sonido
+            FindObjectOfType<AudioManager>().PlaySound("Golpe"); // Hay que meter sonido
             totalCorazones--;
             if(totalCorazones == 2) {
                 CorazonImage3.enabled = false;
